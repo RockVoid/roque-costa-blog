@@ -59,5 +59,19 @@ $lightGreen: #b9e7e7;
             }
         }
 
+        .footer {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: $lightGreen;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                height: 50px;
+            }
+        }
+
     }
 }

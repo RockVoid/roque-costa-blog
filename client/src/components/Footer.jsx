@@ -3,7 +3,7 @@ import Logo from "../img/logo.png";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="footer">
             <img src={Logo} alt="" />
             <span>
                 "Much Love Baby" - Big Smoke!
