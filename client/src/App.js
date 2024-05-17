@@ -4,16 +4,28 @@ import {
   Route,
   Outlet
 } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const Layout = () => {
-  return (<h1>Layout</h1>);
+  return (
+    <>
+      <Navbar/>
+    </>
+  );
 }
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />
+  }
+]);
 
 function App() {
     return (
       <div className="app">
         <div className="container">
-          Hello again, JS :D
+          <RouterProvider router={router} />
         </div>
       </div>
     );
