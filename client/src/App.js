@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
 
 import "./style.scss";
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ]);
 
