@@ -40,6 +40,7 @@ const Login = () => {
                     placeholder="username"
                     name="username"
                     onChange={handleChange}
+                    autoComplete="off"
                 />
                 <input
                     required
@@ -47,9 +48,10 @@ const Login = () => {
                     placeholder="password"
                     name="password"
                     onChange={handleChange}
+                    autoComplete="off"
                 />
                 <button onClick={handleSubmit}>Login</button>
-                {err && <p>{err}</p>}
+                {<p>A SENHA TA ERRADA BICHO</p>}
                 <span>
                     Don't you have an account? <Link to="/register">Register</Link>
                 </span>
