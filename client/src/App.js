@@ -4,10 +4,13 @@ import {
   Route,
   Outlet
 } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Register from "./pages/Register";
 
 import "./style.scss";
 
@@ -24,15 +27,21 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      }
+    ]
   },
   {
     path: "/login",
     element: <Login />
   },
   {
-    path: "/home",
-    element: <Home />
+    path: "/login",
+    element: <Register />
   }
 ]);
 

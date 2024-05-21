@@ -22,8 +22,8 @@ const Home = () => {
     const posts = [
       {
         id: 1,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
+        title: "Olá, meu nome é Roque Costa. Bem-vindo ao meu site!",
+        desc: "Aqui você pode conferir tutoriais, ideias sobre desenvolvimentos e negócios. Além de poder conferir projetos dos quais trabalhei e trabalho!",
         img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
