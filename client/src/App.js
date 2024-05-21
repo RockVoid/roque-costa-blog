@@ -7,6 +7,7 @@ import {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 import "./style.scss";
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/home",
+    element: <Home />
   }
 ]);
 

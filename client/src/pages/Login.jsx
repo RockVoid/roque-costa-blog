@@ -51,7 +51,7 @@ const Login = () => {
                     autoComplete="off"
                 />
                 <button onClick={handleSubmit}>Login</button>
-                {<p>A SENHA TA ERRADA BICHO</p>}
+                {err && <p>Wrong password</p>}
                 <span>
                     Don't you have an account? <Link to="/register">Register</Link>
                 </span>
