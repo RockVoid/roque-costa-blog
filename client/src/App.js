@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
+import Single from "./pages/Single";
+
 
 import "./style.scss";
 
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/post/1",
+        element: <Single />,
       }
     ]
   },
@@ -40,7 +46,7 @@ const router = createBrowserRouter([
     element: <Login />
   },
   {
-    path: "/login",
+    path: "/register",
     element: <Register />
   }
 ]);

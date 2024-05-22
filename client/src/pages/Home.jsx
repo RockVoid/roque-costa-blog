@@ -64,7 +64,7 @@ const Home = () => {
                                 <h1>{post.title}</h1>
                             </Link>
                             <p>{getText(post.desc)}</p>
-                            <button>Read more</button>
+                            <button>Ler mais</button>
                         </div>
                     </div>
                 ))}

@@ -33,6 +33,7 @@ const Register = () => {
             <form>
                 <input
                     required
+                    autoComplete="off"
                     type="text"
                     placeholder="username"
                     onBlur={handleOnBlur}
@@ -40,6 +41,7 @@ const Register = () => {
                 />
                 <input
                     required
+                    autoComplete="off"
                     type="email"
                     placeholder="Your best email"
                     onBlur={handleOnBlur}
@@ -47,6 +49,7 @@ const Register = () => {
                 />
                 <input
                     required
+                    autoComplete="off"
                     type="password"
                     placeholder="Password"
                     onBlur={handleOnBlur}

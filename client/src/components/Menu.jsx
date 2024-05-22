@@ -50,7 +50,7 @@ const Menu = ({ cat }) => {
                 <div className="post" key={post.id}>
                     <img src={post.img} alt={post.title} />
                     <h2>{post.title}</h2>
-                    <button>Read more</button>
+                    <button>Ler mais</button>
                 </div>
             ))}
         </div>
