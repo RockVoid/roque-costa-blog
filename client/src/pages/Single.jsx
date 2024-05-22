@@ -45,16 +45,17 @@ const Single = () => {
     return (
         <div className="single">
             <div className="content">
-                <img src={`../upload/${post?.img}`} alt={post?.title} />
+                {/* <img src={`../upload/${post?.img}`} alt={post?.title} /> */}
+                <img src="https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="mock" />
                 <div className="user">
-                    {post.userImg && <img src={post.userImg} alt={post.title} />}
+                    {true && <img src="https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt={post.title} />}
 
                     <div className="info">
                         <span>{post.username}</span>
                         <p>Posted {moment(post.date).fromNow()}</p>
                     </div>
 
-                    {currentUser?.username === post.username && (
+                    {true && (
                         <div className="edit">
                             <Link to="/write?edit=2" state={post}>
                                 <img src={Edit} alt="Edit Post" />
@@ -70,7 +71,6 @@ const Single = () => {
                     }}
                 ></p>
             </div>
-            <Menu cat={post.cat}/>
         </div>
     );
 }
